@@ -17,6 +17,29 @@ The read-only stdio server currently exposes:
 
 Run the local smoke test with `bun run smoke`.
 
+## Vercel deployment
+
+The server exposes a Vercel-compatible Streamable HTTP endpoint at `/mcp` and
+a public health endpoint at `/health`. The MCP endpoint requires the
+`MEDUSA_MCP_TOKEN` environment variable and a matching `Authorization: Bearer`
+token.
+
+From this folder:
+
+```powershell
+bunx vercel login
+bunx vercel link
+bunx vercel env add MEDUSA_MCP_TOKEN production
+bunx vercel --prod
+```
+
+After deployment, verify `https://your-project.vercel.app/health`, then use
+`https://your-project.vercel.app/mcp` as the remote MCP URL in Codex.
+
+The remote deployment provides universal Medusa knowledge. Local project
+inspection tools can only inspect files available to the environment running
+the MCP server; they cannot see an unrelated developer machine's workspace.
+
 Project structure:
 
 ```text
