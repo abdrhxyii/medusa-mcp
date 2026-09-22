@@ -1,0 +1,42 @@
+<evaluation>
+  <qa_pair>
+    <question>Search the official Medusa documentation for the reusable unit of functionality related to one domain or integration. What is this concept called?</question>
+    <answer>Module</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>According to the official Medusa documentation, what mechanism links data models across modules?</question>
+    <answer>Module Links</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What Medusa customization type is intended to contain reusable customizations that can be published to npm and installed in multiple Medusa applications?</question>
+    <answer>Plugin</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>What Medusa construct should contain custom business flows and be invoked from API routes, subscribers, and scheduled jobs?</question>
+    <answer>Workflow</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which Medusa module handles configurable pricing for products and variants?</question>
+    <answer>Pricing Module</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which Medusa module handles product variants, categories, and bulk edits?</question>
+    <answer>Product Module</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which Medusa module manages inventory levels, multi-warehouse inventory, and reservations?</question>
+    <answer>Inventory Module</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which Medusa customization point is used to create custom HTTP endpoints?</question>
+    <answer>API Routes</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which Medusa customization point reacts to emitted events?</question>
+    <answer>Subscribers</answer>
+  </qa_pair>
+  <qa_pair>
+    <question>Which transport should a local MCP client use when it launches the MCP server as a child process?</question>
+    <answer>stdio</answer>
+  </qa_pair>
+</evaluation>

@@ -1,0 +1,26 @@
+{
+  "name": "medusa-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Universal, version-aware MCP server for Medusa projects",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "smoke": "bun run scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/node": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.0.0",
+    "execa": "^10.0.1",
+    "fast-glob": "^3.3.3",
+    "octokit": "^5.0.5",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.0.0"
+  }
+}
