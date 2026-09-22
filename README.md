@@ -10,6 +10,10 @@ The read-only stdio server currently exposes:
 - `medusa_detect_version`
 - `medusa_inspect_project`
 - `medusa_search_docs`
+- `medusa_search_local_source`
+- `medusa_identify_native_pattern`
+- `medusa_validate_project_patterns`
+- `medusa_generate_implementation_plan`
 
 Run the local smoke test with `bun run smoke`.
 
@@ -53,7 +57,6 @@ manager, runtime, test runner, and script runner.
 - MCP TypeScript SDK
 - Zod for tool input validation
 - Bun's built-in SQLite support with FTS5 for local documentation and source search
-- Octokit for GitHub API access
 - Vitest-compatible Bun tests initially
 - stdio transport for local MCP clients
 - Streamable HTTP transport later for hosted usage
@@ -65,7 +68,7 @@ scaffold is created:
 
 ```powershell
 bun add @modelcontextprotocol/server @modelcontextprotocol/node zod
-bun add octokit execa fast-glob
+bun add execa fast-glob
 bun add -d typescript @types/node
 ```
 
@@ -84,8 +87,7 @@ The first release should be read-only and provide tools for:
 - Detecting a project's Medusa version
 - Inspecting Medusa configuration and installed packages
 - Searching Medusa documentation and source
-- Searching official GitHub issues and releases
-- Finding native Medusa solutions before suggesting custom code
+- Finding native Medusa patterns before suggesting custom code
 - Checking whether an API or pattern is compatible with the detected version
 - Generating an implementation plan
 

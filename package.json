@@ -15,7 +15,6 @@
     "@modelcontextprotocol/server": "^2.0.0",
     "execa": "^10.0.1",
     "fast-glob": "^3.3.3",
-    "octokit": "^5.0.5",
     "zod": "^4.0.0"
   },
   "devDependencies": {
